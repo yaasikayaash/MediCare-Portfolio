@@ -4,285 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediCare | UI/UX Case Study</title>
-
+    <title>MediCare | UI/UX Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">Medi<span>Care.</span></a>
+            <a href="#home" class="logo">MediCare<span>.</span></a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#screens">Screens</a></li>
-                <li><a href="#design">Design Process</a></li>
-            </ul>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" onclick="closeMenu()">Home</a>
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#screens" onclick="closeMenu()">Screens</a>
+                <a href="#process" onclick="closeMenu()">Process</a>
+            </div>
 
-            <a href="https://www.figma.com/proto/4OdS9SGN5tZIGZmVNMhZ2Y/MediCare-App?node-id=5-7330&p=f&t=1wg075nAfdyd0keM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A7330"
-               target="_blank" class="nav-button">
-                View Prototype ↗
-            </a>
-
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <a href="#screens" class="nav-button">Explore Project</a>
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
-
-        <div class="hero-content">
+        <div class="hero-text">
             <p class="tag">UI/UX DESIGN PROJECT</p>
-
-            <h1>Healthcare made <span>simple.</span></h1>
-
+            <h1>Healthcare made<br><span>simple & accessible.</span></h1>
             <p class="hero-description">
-                MediCare is a mobile healthcare application concept
-                designed to make doctor appointments and healthcare
-                services simple, convenient and accessible.
+                MediCare is a mobile healthcare app concept designed to
+                simplify doctor appointments and create a smooth,
+                user-friendly healthcare experience.
             </p>
 
             <div class="hero-buttons">
-                <a href="#screens" class="primary-btn">Explore Screens</a>
-
+                <a href="#screens" class="primary-btn">View Screens</a>
                 <a href="https://www.figma.com/proto/4OdS9SGN5tZIGZmVNMhZ2Y/MediCare-App?node-id=5-7330&p=f&t=1wg075nAfdyd0keM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A7330"
-                   target="_blank" class="secondary-btn">
-                    View Figma ↗
-                </a>
+                   target="_blank" class="secondary-btn">View Prototype ↗</a>
             </div>
         </div>
 
         <div class="hero-image">
-            <img src="assets/Home%20Screen.png" alt="MediCare Home Screen">
+            <img src="Home%20Screen.png" alt="MediCare Home Screen">
         </div>
-
     </section>
 
-    <!-- About Section -->
     <section class="about section" id="about">
-
         <div class="section-heading">
-            <p class="tag">OVERVIEW</p>
-            <h2>About the Project</h2>
+            <p class="tag">ABOUT THE PROJECT</p>
+            <h2>Designed for a better<br>healthcare experience</h2>
         </div>
 
-        <p class="about-text">
-            MediCare focuses on creating a smooth digital healthcare
-            experience. The application allows users to explore
-            healthcare services, view doctor details, book appointments
-            and complete the payment process through a simple interface.
-        </p>
+        <div class="about-content">
+            <p>
+                MediCare is a conceptual mobile application that helps users
+                find doctors, book appointments and manage their appointment
+                journey through a simple digital experience.
+                The interface focuses on clarity, accessibility and
+                easy navigation.
+            </p>
+        </div>
 
         <div class="info-grid">
-
             <div class="info-card">
-                <span>01</span>
                 <h3>Project</h3>
-                <p>MediCare Mobile App</p>
+                <p>Mobile App UI/UX</p>
             </div>
 
             <div class="info-card">
-                <span>02</span>
                 <h3>Category</h3>
-                <p>Healthcare Application</p>
+                <p>Healthcare</p>
             </div>
 
             <div class="info-card">
-                <span>03</span>
-                <h3>My Role</h3>
-                <p>UI/UX Design</p>
-            </div>
-
-            <div class="info-card">
-                <span>04</span>
                 <h3>Tool</h3>
                 <p>Figma</p>
             </div>
 
+            <div class="info-card">
+                <h3>Focus</h3>
+                <p>User-centered design</p>
+            </div>
         </div>
     </section>
 
-    <!-- Screens Section -->
-    <section class="screens-section section" id="screens">
-
+    <section class="screens section" id="screens">
         <div class="section-heading">
             <p class="tag">DESIGN SHOWCASE</p>
-            <h2>Explore the App Screens</h2>
-            <p>Ten individual screens showcasing the MediCare user journey.</p>
+            <h2>App Screens</h2>
+            <p>Explore the different screens designed for MediCare.</p>
         </div>
 
-        <div class="screen-grid">
+        <div class="screens-grid">
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Home%20Screen.png" alt="Home Screen">
-                </div>
-                <div class="screen-info">
-                    <span>01</span>
-                    <h3>Home Screen</h3>
-                    <p>Main dashboard of the application.</p>
-                </div>
+                <img src="Home%20Screen.png" alt="Home Screen">
+                <h3>01. Home Screen</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Doctor%20Details%20Screen.png" alt="Doctor Details Screen">
-                </div>
-                <div class="screen-info">
-                    <span>02</span>
-                    <h3>Doctor Details</h3>
-                    <p>Doctor information and details.</p>
-                </div>
+                <img src="Doctor%20Details%20Screen.png" alt="Doctor Details Screen">
+                <h3>02. Doctor Details</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Book%20Appointment%20Screen.png" alt="Book Appointment Screen">
-                </div>
-                <div class="screen-info">
-                    <span>03</span>
-                    <h3>Book Appointment</h3>
-                    <p>Appointment booking interface.</p>
-                </div>
+                <img src="Book%20Appointment%20Screen.png" alt="Book Appointment Screen">
+                <h3>03. Book Appointment</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Appointment%20summary.png" alt="Appointment Summary">
-                </div>
-                <div class="screen-info">
-                    <span>04</span>
-                    <h3>Appointment Summary</h3>
-                    <p>Review appointment information.</p>
-                </div>
+                <img src="Appointment%20summary.png" alt="Appointment Summary">
+                <h3>04. Appointment Summary</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Payment%20%E2%80%94%20UPI.png" alt="UPI Payment">
-                </div>
-                <div class="screen-info">
-                    <span>05</span>
-                    <h3>UPI Payment</h3>
-                    <p>UPI payment interface.</p>
-                </div>
+                <img src="Payment%20%E2%80%94%20UPI.png" alt="UPI Payment">
+                <h3>05. UPI Payment</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Payment%20%E2%80%94%20Card.png" alt="Card Payment">
-                </div>
-                <div class="screen-info">
-                    <span>06</span>
-                    <h3>Card Payment</h3>
-                    <p>Card payment interface.</p>
-                </div>
+                <img src="Payment%20%E2%80%94%20Card.png" alt="Card Payment">
+                <h3>06. Card Payment</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Payment%20%E2%80%94%20Net%20banking.png" alt="Net Banking Payment">
-                </div>
-                <div class="screen-info">
-                    <span>07</span>
-                    <h3>Net Banking</h3>
-                    <p>Net banking payment interface.</p>
-                </div>
+                <img src="Payment%20%E2%80%94%20Net%20banking.png" alt="Net Banking Payment">
+                <h3>07. Net Banking</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Payment%20processing.png" alt="Payment Processing">
-                </div>
-                <div class="screen-info">
-                    <span>08</span>
-                    <h3>Payment Processing</h3>
-                    <p>Payment processing screen.</p>
-                </div>
+                <img src="Payment%20processing.png" alt="Payment Processing">
+                <h3>08. Payment Processing</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/Appointment%20confirmed.png" alt="Appointment Confirmed">
-                </div>
-                <div class="screen-info">
-                    <span>09</span>
-                    <h3>Appointment Confirmed</h3>
-                    <p>Appointment confirmation screen.</p>
-                </div>
+                <img src="Appointment%20confirmed.png" alt="Appointment Confirmed">
+                <h3>09. Appointment Confirmed</h3>
             </div>
 
             <div class="screen-card">
-                <div class="screen-image">
-                    <img src="assets/View%20appointment.png" alt="View Appointment">
-                </div>
-                <div class="screen-info">
-                    <span>10</span>
-                    <h3>View Appointment</h3>
-                    <p>View booked appointment details.</p>
-                </div>
+                <img src="View%20appointment.png" alt="View Appointment">
+                <h3>10. View Appointment</h3>
             </div>
 
         </div>
     </section>
 
-    <!-- Design Process -->
-    <section class="design-section section" id="design">
-
+    <section class="process section" id="process">
         <div class="section-heading">
-            <p class="tag">MY APPROACH</p>
+            <p class="tag">MY DESIGN JOURNEY</p>
             <h2>Design Process</h2>
         </div>
 
         <div class="process-grid">
-
             <div class="process-card">
-                <h3>01. Research</h3>
-                <p>Understanding user needs and healthcare booking requirements.</p>
+                <span>01</span>
+                <h3>Research</h3>
+                <p>Understanding user needs and healthcare appointment challenges.</p>
             </div>
 
             <div class="process-card">
-                <h3>02. Wireframing</h3>
-                <p>Planning the structure and flow of the application.</p>
+                <span>02</span>
+                <h3>Planning</h3>
+                <p>Organizing app flow and essential user interactions.</p>
             </div>
 
             <div class="process-card">
-                <h3>03. UI Design</h3>
-                <p>Creating clean layouts with a consistent visual style.</p>
+                <span>03</span>
+                <h3>Design</h3>
+                <p>Creating simple, clean and intuitive mobile app screens.</p>
             </div>
 
             <div class="process-card">
-                <h3>04. Prototyping</h3>
-                <p>Connecting screens to demonstrate the user journey.</p>
+                <span>04</span>
+                <h3>Prototype</h3>
+                <p>Connecting screens to demonstrate the application journey.</p>
             </div>
-
         </div>
-
     </section>
 
-    <!-- Footer -->
+    <section class="contact section">
+        <div class="contact-box">
+            <p class="tag">EXPLORE THE DESIGN</p>
+            <h2>Experience MediCare</h2>
+            <p>Explore the interactive prototype of my healthcare app concept.</p>
+
+            <a href="https://www.figma.com/proto/4OdS9SGN5tZIGZmVNMhZ2Y/MediCare-App?node-id=5-7330&p=f&t=1wg075nAfdyd0keM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A7330"
+               target="_blank" class="primary-btn">Explore Figma Prototype ↗</a>
+        </div>
+    </section>
+
     <footer>
-        <h2>MediCare.</h2>
-        <p>A UI/UX Design Case Study</p>
-
-        <a href="https://www.figma.com/proto/4OdS9SGN5tZIGZmVNMhZ2Y/MediCare-App?node-id=5-7330&p=f&t=1wg075nAfdyd0keM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A7330"
-           target="_blank">
-            Explore the Figma Prototype ↗
-        </a>
-
-        <p class="copyright">© 2026 MediCare UI/UX Project</p>
+        <p>© 2026 MediCare UI/UX Portfolio</p>
         <p class="created-by">Designed & Developed by Yaasika</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
